@@ -1,0 +1,101 @@
+.parallax {
+  background-image: url('https://source.unsplash.com/1600x900/?hotel');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.animated-texts {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.parallax-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-out;
+  line-height: 1.2;
+}
+
+.parallax-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  animation: slideInRight 1s ease-out;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.hotel-color {
+  color: #ffcc00;
+  font-weight: 800;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-title {
+    font-size: 2.5rem;
+  }
+
+  .parallax-subtitle {
+    font-size: 1.2rem;
+  }
+} 

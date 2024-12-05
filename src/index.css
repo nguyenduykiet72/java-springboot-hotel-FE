@@ -6,10 +6,10 @@ body {
   opacity: 0.9;
 }
 
-/* Navigation bar definitions */
 .navbar {
   padding: 0;
 }
+
 .navbar .navbar-nav .nav-link {
   padding: 1em;
 }
@@ -23,7 +23,7 @@ body {
   left: 0;
   right: 0;
   content: "";
-  background-color: rgb(169, 77, 123);
+  background-color: #ffcc00;
   width: 0;
   margin: 0 auto;
   height: 4px;
@@ -68,6 +68,7 @@ body {
 .hotel-color {
   color: rgb(169, 77, 123);
 }
+
 .room-price {
   color: darkgoldenrod;
   font-family: "Courier New", Courier, monospace;
@@ -174,7 +175,7 @@ h2 {
     transform: none;
   }
 }
-/* Header overlay */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -192,7 +193,6 @@ h2 {
   justify-content: flex-start;
 }
 
-/* The header banner */
 .header-banner {
   background-image: url("./assets/images/genichiro.jpg");
   background-size: cover;
